@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NovaMart brings quality products and everyday essentials to your doorstep.">
+    <title>NovaMart | Online Shopping</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <span class="brand-mark">N</span>
+                    NovaMart
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cart">Cart</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions d-flex align-items-center gap-3">
+                        <form class="d-flex search-form" id="search-form" role="search">
+                            <input class="form-control" type="search" id="search-input" placeholder="Search products..." aria-label="Search products">
+                            <button class="btn btn-dark" type="submit">Search</button>
+                        </form>
+
+                        <a href="#cart" class="cart-link" aria-label="View cart">
+                            Cart <span class="cart-count" id="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6">
+                        <span class="hero-badge">Welcome to NovaMart</span>
+                        <h1>Shop smarter. Live better.</h1>
+                        <p class="lead">
+                            Discover quality products, reliable performance, and everyday essentials curated for modern living.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#products" class="btn btn-dark btn-lg">Shop Now</a>
+                            <a href="#categories" class="btn btn-outline-dark btn-lg">Browse Categories</a>
+                        </div>
+
+                        <div class="trust-row">
+                            <div>
+                                <strong>10k+</strong>
+                                <span>Happy shoppers</span>
+                            </div>
+                            <div>
+                                <strong>2-day</strong>
+                                <span>Fast delivery</span>
+                            </div>
+                            <div>
+                                <strong>4.9/5</strong>
+                                <span>Customer rating</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="hero-visual">
+                            <div class="hero-visual-card">
+                                <span class="mini-tag">Trending</span>
+                                <div class="hero-word">SHOP</div>
+                                <ul>
+                                    <li>Smartphones</li>
+                                    <li>Laptops</li>
+                                    <li>Audio & Wearables</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="container section-spacing">
+            <div class="section-heading text-center">
+                <p class="eyebrow">Popular Categories</p>
+                <h2>Shop by Category</h2>
+            </div>
+
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-card category-filter" data-category="phones" type="button">
+                        <img class="category-image" src="../images/Phones-Tabletdeals.png" alt="" loading="lazy">
+                        <h5>Phones &amp; Tablets</h5>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-card category-filter" data-category="computers" type="button">
+                        <img class="category-image" src="../images/Computing-deals.png" alt="" loading="lazy">
+                        <h5>Computers</h5>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-card category-filter" data-category="electronics" type="button">
+                        <img class="category-image" src="../images/Television-deals.png" alt="" loading="lazy">
+                        <h5>Electronics</h5>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-card category-filter" data-category="accessories" type="button">
+                        <img class="category-image" src="../images/Mobile-Accessoriesdeals.png" alt="" loading="lazy">
+                        <h5>Accessories</h5>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-card category-filter" data-category="appliances" type="button">
+                        <img class="category-image" src="../images/Appliances-deals.png" alt="" loading="lazy">
+                        <h5>Home Appliances</h5>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-card category-filter" data-category="personal-care" type="button">
+                        <img class="category-image" src="../images/Beauty-deals.png" alt="" loading="lazy">
+                        <h5>Personal Care</h5>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section section-spacing">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="eyebrow">Featured Picks</p>
+                    <h2>Top Products</h2>
+                    <p class="price-note">Prices for newly added products are placeholders. Update them before publishing.</p>
+                </div>
+
+                <div class="text-center mb-4">
+                    <button id="show-all-products" class="btn btn-warning btn-lg">Show All Products</button>
+                </div>
+
+                <div id="search-message" class="search-message" aria-live="polite"></div>
+
+                <div class="row g-4 product-grid">
+                    <div class="col-md-6 col-lg-3 product-item" data-category="phones">
+                        <div class="card h-100 product-card">
+                            <img src="../images/smartphone-product.jpg" class="card-img-top" alt="Android Smartphone">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Android Smartphone</h5>
+                                <p class="card-text">Affordable smartphone with great features and smooth performance.</p>
+                                <div class="mt-auto">
+                                    <h5 class="price">₦150,000</h5>
+                                    <button class="btn btn-warning add-to-cart" data-name="Android Smartphone" data-price="150000" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 product-item" data-category="computers">
+                        <div class="card h-100 product-card">
+                            <img src="../images/laptop-product.jpg" class="card-img-top" alt="Laptop Computer">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Laptop Computer</h5>
+                                <p class="card-text">Reliable laptop built for work, study, and daily productivity.</p>
+                                <div class="mt-auto">
+                                    <h5 class="price">₦450,000</h5>
+                                    <button class="btn btn-warning add-to-cart" data-name="Laptop Computer" data-price="450000" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 product-item" data-category="electronics">
+                        <div class="card h-100 product-card">
+                            <img src="../images/headphones-product.jpg" class="card-img-top" alt="Wireless Headphones">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Wireless Headphones</h5>
+                                <p class="card-text">Enjoy clear sound, deep bass, and all-day listening comfort.</p>
+                                <div class="mt-auto">
+                                    <h5 class="price">₦35,000</h5>
+                                    <button class="btn btn-warning add-to-cart" data-name="Wireless Headphones" data-price="35000" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 product-item" data-category="accessories">
+                        <div class="card h-100 product-card">
+                            <img src="../images/watch-product.jpg" class="card-img-top" alt="Smart Watch">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Smart Watch</h5>
+                                <p class="card-text">Track your goals and stay connected with a modern touch.</p>
+                                <div class="mt-auto">
+                                    <h5 class="price">₦25,000</h5>
+                                    <button class="btn btn-warning add-to-cart" data-name="Smart Watch" data-price="25000" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-md-6 col-lg-3 product-item" data-category="phones">
+                            <div class="card h-100 product-card">
+                                <img src="../images/Ipad.jpg" class="card-img-top" alt="Tablet with screen and folio stand" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">iPad Tablet</h5>
+                                    <p class="card-text">A versatile tablet for streaming, browsing, and everyday productivity.</p>
+                                    <div class="mt-auto">
+                                        <h5 class="price">₦650,000</h5>
+                                        <button class="btn btn-warning add-to-cart" data-name="iPad Tablet" data-price="650000" type="button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 product-item" data-category="electronics">
+                            <div class="card h-100 product-card">
+                                <img src="../images/ECOFLOW%20DELTA%203.jpg" class="card-img-top" alt="EcoFlow Delta 3 portable power station" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">EcoFlow Delta 3</h5>
+                                    <p class="card-text">Portable backup power for home essentials and devices.</p>
+                                    <div class="mt-auto">
+                                        <h5 class="price">₦2,750,000</h5>
+                                        <button class="btn btn-warning add-to-cart" data-name="EcoFlow Delta 3" data-price="2750000" type="button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 product-item" data-category="appliances">
+                            <div class="card h-100 product-card">
+                                <img src="../images/HANSEN%2018%20inches%20industrial%20level%20standing%20fan.jpg" class="card-img-top" alt="Hansen 18-inch standing fan" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Hansen 18-Inch Standing Fan</h5>
+                                    <p class="card-text">A sturdy standing fan for comfortable airflow at home or work.</p>
+                                    <div class="mt-auto">
+                                        <h5 class="price">₦180,000</h5>
+                                        <button class="btn btn-warning add-to-cart" data-name="Hansen 18-Inch Standing Fan" data-price="180000" type="button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 product-item" data-category="appliances">
+                            <div class="card h-100 product-card">
+                                <img src="../images/HANSEN%20Electric%20pressing%20iron.jpg" class="card-img-top" alt="Hansen electric pressing iron" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Hansen Electric Pressing Iron</h5>
+                                    <p class="card-text">A practical everyday iron for neat, wrinkle-free clothes.</p>
+                                    <div class="mt-auto">
+                                        <h5 class="price">₦35,000</h5>
+                                        <button class="btn btn-warning add-to-cart" data-name="Hansen Electric Pressing Iron" data-price="35000" type="button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 product-item" data-category="personal-care">
+                            <div class="card h-100 product-card">
+                                <img src="../images/NIVEA%20Dry%20impact%20Roll-on%20for%20men.jpg" class="card-img-top" alt="Nivea Men Dry Impact roll-on deodorant" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Nivea Men Dry Impact Roll-On</h5>
+                                    <p class="card-text">Daily antiperspirant protection in a convenient roll-on.</p>
+                                    <div class="mt-auto">
+                                        <h5 class="price">₦8,500</h5>
+                                        <button class="btn btn-warning add-to-cart" data-name="Nivea Men Dry Impact Roll-On" data-price="8500" type="button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 product-item" data-category="personal-care">
+                            <div class="card h-100 product-card">
+                                <img src="../images/NIVEA%20Radiant%20%26%20beauty.jpg" class="card-img-top" alt="Nivea Radiant and Beauty body lotion" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Nivea Radiant &amp; Beauty Lotion</h5>
+                                    <p class="card-text">A nourishing body lotion for your daily skincare routine.</p>
+                                    <div class="mt-auto">
+                                        <h5 class="price">₦18,000</h5>
+                                        <button class="btn btn-warning add-to-cart" data-name="Nivea Radiant and Beauty Lotion" data-price="18000" type="button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 product-item" data-category="electronics">
+                            <div class="card h-100 product-card">
+                                <img src="../images/solar%20generator.jpg" class="card-img-top" alt="HeroEE Light 1 home backup power system" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">HeroEE Light 1 Power System</h5>
+                                    <p class="card-text">A home backup power system for lighting and essential devices.</p>
+                                    <div class="mt-auto">
+                                        <h5 class="price">₦1,250,000</h5>
+                                        <button class="btn btn-warning add-to-cart" data-name="HeroEE Light 1 Power System" data-price="1250000" type="button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 product-item" data-category="electronics">
+                            <div class="card h-100 product-card">
+                                <img src="../images/tripple%20renc%20camera%2C%20powered%20by%20solar%20panels.jpg" class="card-img-top" alt="Solar-powered triple-lens security camera" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Solar-Powered Security Camera</h5>
+                                    <p class="card-text">Outdoor security camera with solar charging and multi-view monitoring.</p>
+                                    <div class="mt-auto">
+                                        <h5 class="price">₦95,000</h5>
+                                        <button class="btn btn-warning add-to-cart" data-name="Solar-Powered Security Camera" data-price="95000" type="button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="col-md-6 col-lg-3 product-item" data-category="electronics">
+                                <div class="card h-100 product-card">
+                                    <img src="../images/deals-of-the-day-TV.jpg" class="card-img-top" alt="Smart television" loading="lazy">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Smart Television</h5>
+                                        <p class="card-text">A smart TV for streaming entertainment and enjoying your favorite shows.</p>
+                                        <div class="mt-auto">
+                                            <h5 class="price">₦82,999</h5>
+                                            <button class="btn btn-warning add-to-cart" data-name="Smart Television" data-price="82999" type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="container section-spacing cart-section">
+            <div class="section-heading text-center">
+                <p class="eyebrow">Your Basket</p>
+                <h2>Shopping Cart</h2>
+            </div>
+
+            <div id="cart-items" class="row g-4">
+                <div class="col-12">
+                    <p class="cart-empty text-center">Your cart is empty.</p>
+                </div>
+            </div>
+
+            <div class="cart-summary d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <h4>Total: ₦<span id="cart-total">0</span></h4>
+                <button class="btn btn-dark" type="button">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>NovaMart</h4>
+                    <p>Your trusted online shopping platform for quality, affordable and stylish essentials.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@ekwufienachukwuwilliams@gmail.com</p>
+                    <p>Phone: +234 703 602 9726</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaMart. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
